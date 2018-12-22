@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from flask import flask
+from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route("/")
 def main():
@@ -19,4 +19,4 @@ def main():
 
 
 if __name__=="__main__":
-    app.run()
+    app.run(debug=True,host='0.0.0.0',port=80)
